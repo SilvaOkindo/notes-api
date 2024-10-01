@@ -1,9 +1,10 @@
-import { mockNotes } from "../notes.mjs";
+import { mockNotes } from "../mockdata/notes.mjs";
 
 export const resolverNoteById = (request, response, next) => {
     const {
         params: { id },
-      } = request;
+      } = request
+
       const parsedId = parseInt(id);
     
       if (isNaN(parsedId))
